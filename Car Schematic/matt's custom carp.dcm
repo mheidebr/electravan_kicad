@@ -1,3 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP TESLA_24_V_MODULE
+D Single-cell battery
+K battery cell
+F ~
+$ENDCMP
+#
 #End Doc Library
