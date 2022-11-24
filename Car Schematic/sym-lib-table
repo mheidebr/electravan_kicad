@@ -1,3 +1,8 @@
 (sym_lib_table
-  (lib (name "matt's custom carp")(type "KiCad")(uri "${KIPRJMOD}/matt's custom carp.kicad_sym")(options "")(descr ""))
+  (lib (name "matt's custom carp")(type "Legacy")(uri "${KIPRJMOD}/matt's custom carp.lib")(options "")(descr ""))
+  (lib (name "Car-Schematic-rescue")(type "Legacy")(uri "${KIPRJMOD}/Car Schematic-rescue.lib")(options "")(descr ""))
+  (lib (name "matts 6.0 library")(type "KiCad")(uri "${KIPRJMOD}/matt's custom carp.kicad_sym")(options "")(descr ""))
+  (lib (name "Car Schematic Backgroun")(type "KiCad")(uri "${KIPRJMOD}/Car Drawing Background.kicad_sym")(options "")(descr ""))
+  (lib (name "Car Schematic Background 2")(type "KiCad")(uri "${KIPRJMOD}/Car Drawing Background 2.kicad_sym")(options "")(descr ""))
+  (lib (name "Car Schematic Background 3")(type "KiCad")(uri "${KIPRJMOD}/Car Drawing Background 3.kicad_sym")(options "")(descr ""))
 )

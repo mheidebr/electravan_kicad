@@ -403,8 +403,8 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "",
-    "plot_directory": "",
+    "page_layout_descr_file": "Electravan Drawing Sheet.kicad_wks",
+    "plot_directory": ".",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -424,12 +424,16 @@
       "Engine Compartment"
     ],
     [
-      "e19f199d-3042-4755-b0e4-bf4abb0182d5",
+      "818a1dbe-5453-4748-ad68-48c6a2378d5e",
       "Front Electrical Panel 2\\Gauge Cluster"
     ],
     [
       "8ae76f6a-11c1-4831-a4cb-4c5d84f2009e",
       "Upper Indicator Panel"
+    ],
+    [
+      "c21c9039-106e-4702-9253-a75703ed4148",
+      "Battery Box"
     ]
   ],
   "text_variables": {}
