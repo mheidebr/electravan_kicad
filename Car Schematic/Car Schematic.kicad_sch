@@ -9,7 +9,7 @@
     (date "2022-11-23")
     (rev "0.1")
     (company "MATTHEW BRYANT-HEIDEBRECHT")
-    (comment 1 "(PARENTHESIS REPRESENTS SOFT REFERENCES AND MAY NOT BE CORRECT THROUGH UPDATES)")
+    (comment 1 "(PARENTHESIS ARE SOFT REFERENCES AND MAY NOT BE CORRECT THROUGH UPDATES)")
     (comment 2 "THICK WIRES REPRESENT LOW GAUGE WIRES, SMALL WIRES REPRESENT HIGH GAUGE WIRES")
     (comment 3 "BUSES REPRESENT WIRE LOOMS ")
     (comment 4 "WIRES AND BUSES REPRESENT THE PHYSICAL WIRE CONFIGURATIONS")
@@ -110,8 +110,8 @@
   )
 
   (bus_alias "BATTERY_SENSE_BUS" (members "CELL_1-" "CELL_1+" "CELL_2+" "CELL_3+"))
-  (bus_alias "CAN" (members "CAN1_H" "CAN1_L" "CELL_1+"))
   (bus_alias "BMS_I/O_CONNECTIONS" (members "BMS_I/O"))
+  (bus_alias "CAN" (members "CAN1_H" "CAN1_L" "CELL_1+"))
   (bus_alias "THERM_AND_REMOTE_BMS_BUS" (members ))
   (junction (at 53.975 43.815) (diameter 0) (color 0 0 0 0)
     (uuid 0f5f7adc-7a43-4207-925f-70baef752514)
@@ -142,6 +142,10 @@
   (bus_entry (at 53.975 34.29) (size -2.54 -2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 5e55c29a-eb93-4aca-9bd5-a878de5492c8)
+  )
+  (bus_entry (at 190.5 168.91) (size 2.54 -2.54)
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 64965b77-6060-4528-a309-c07d98511803)
   )
   (bus_entry (at 53.975 39.37) (size -2.54 -2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -181,7 +185,7 @@
   )
   (bus_entry (at 106.045 157.48) (size 2.54 2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid add76a0f-11ce-43bc-a60e-fc50dde7f6f4)
+    (uuid add76a0f-11ce-43bc-a60e-fc50dde7f6f5)
   )
   (bus_entry (at 193.04 166.37) (size 2.54 2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -193,23 +197,23 @@
   )
   (bus_entry (at 190.5 156.21) (size 2.54 -2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ced04853-0bd6-4548-8380-fabf20183f42)
+    (uuid ced04853-0bd6-4548-8380-fabf20183f43)
   )
   (bus_entry (at 190.5 158.75) (size 2.54 -2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ced04853-0bd6-4548-8380-fabf20183f42)
+    (uuid ced04853-0bd6-4548-8380-fabf20183f44)
   )
   (bus_entry (at 190.5 166.37) (size 2.54 -2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ced04853-0bd6-4548-8380-fabf20183f42)
+    (uuid ced04853-0bd6-4548-8380-fabf20183f45)
   )
   (bus_entry (at 190.5 161.29) (size 2.54 -2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ced04853-0bd6-4548-8380-fabf20183f42)
+    (uuid ced04853-0bd6-4548-8380-fabf20183f46)
   )
   (bus_entry (at 190.5 163.83) (size 2.54 -2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ced04853-0bd6-4548-8380-fabf20183f42)
+    (uuid ced04853-0bd6-4548-8380-fabf20183f47)
   )
   (bus_entry (at 193.04 161.29) (size 2.54 2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -272,6 +276,11 @@
   (bus (pts (xy 53.975 36.83) (xy 53.975 39.37))
     (stroke (width 2) (type default) (color 0 0 0 0))
     (uuid 2f101134-0dfe-495b-9b09-8fc251e0c26c)
+  )
+
+  (wire (pts (xy 171.45 168.91) (xy 190.5 168.91))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 2f72f368-6e3d-4bad-a7c5-9a523db521ce)
   )
   (bus (pts (xy 193.04 156.21) (xy 193.04 158.75))
     (stroke (width 2) (type default) (color 0 0 0 0))
@@ -354,8 +363,8 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 690d5a7e-885b-484e-8e88-2a9ec0d49a57)
   )
-  (polyline (pts (xy 198.12 95.885) (xy 201.93 95.885))
-    (stroke (width 2) (type solid) (color 255 255 255 1))
+  (polyline (pts (xy 190.5 95.885) (xy 201.93 95.885))
+    (stroke (width 4) (type solid) (color 255 255 255 1))
     (uuid 6a990186-59e8-4eb5-ac60-9bc48385e28d)
   )
 
@@ -394,12 +403,6 @@
     (stroke (width 2) (type default) (color 0 0 0 0))
     (uuid 8c238981-14b2-4a43-bfd1-808f6b4610fd)
   )
-
-  (polyline (pts (xy 198.12 96.52) (xy 201.93 96.52))
-    (stroke (width 2) (type solid) (color 255 255 255 1))
-    (uuid 8cb99b66-fc02-4dc3-a115-d53cb9d63a6f)
-  )
-
   (bus (pts (xy 106.045 172.72) (xy 106.045 175.26))
     (stroke (width 2) (type default) (color 0 0 0 0))
     (uuid 9646e2f9-7409-4358-a328-26358b95784c)
@@ -529,7 +532,7 @@
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 01555e01-d8b6-4a2a-a091-803be0062d37)
   )
-  (text "GAUGE PANEL\nGAUGE ARBITRATOR\n12V FUSES\nCONTROL SWITCHES\nHEATER\nUSB CHARGER\nPHONE CHARGER\n\n"
+  (text "GAUGE PANEL\nGAUGE ARBITRATOR\n12V FUSES\nCONTROL SWITCHES\nHEATER\nUSB CHARGER\nPHONE CHARGER\nFRONT LIGHTS"
     (at 45.72 101.6 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 13c17216-0443-417e-8ed7-9ec5e7cf4fcc)
@@ -601,10 +604,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 32467123-2eb8-4bd8-913f-171d9204afa9)
   )
-  (label "M1" (at 198.12 97.155 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 32eb2a13-f75b-4434-9bf9-fe1fe959ba97)
-  )
   (label "CAN1_H" (at 109.855 157.48 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 343b0dc8-68c2-4521-a74c-238e5a34f426)
@@ -632,6 +631,10 @@
   (label "MOTOR THERMISTOR SIG" (at 196.85 158.75 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5ccec755-bbb2-42b3-9bad-c3d37afd5e0c)
+  )
+  (label "12V" (at 172.085 168.91 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 99bd4f6a-f378-4d13-b0c6-ee1144f59959)
   )
   (label "MOTOR RPM REF" (at 171.45 166.37 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -665,12 +668,12 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f447efbf-3433-4b24-b26f-4a08ca095877)
   )
-  (label "MOTOR THERMISTOR SIGNAL" (at 109.855 162.56 0)
+  (label "MOTOR THERMISTOR SIG" (at 109.855 162.56 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f7bbf0a0-0da6-488e-97aa-79c736f4b201)
   )
-  (label "M2" (at 198.12 100.33 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
+  (label "M1, M2" (at 189.23 97.79 0)
+    (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
     (uuid fd702afe-0508-4fe7-b440-8ea038bc4740)
   )
   (label "AC_LINE" (at 196.85 163.83 0)
@@ -812,19 +815,31 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/0e6eb586-bfb9-4ce9-a477-981aea44dc5a"
       (reference "#PWR?") (unit 1) (value "+12V") (footprint "")
     )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/0fef5372-8317-4e59-b961-f1c1c58c72a7"
+      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
+    )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/1009ebac-9f25-410d-aee9-038ac0792d7e"
       (reference "#PWR?") (unit 1) (value "+12V") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/109aea74-0671-48ad-b7bf-c346bbcd7ae0"
       (reference "#PWR?") (unit 1) (value "+12V") (footprint "")
     )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/1138d20e-a752-4b1c-9f46-2445770ea054"
+      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
+    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/11faf701-7cc4-4fa5-93b7-425ae9c25cfc"
+      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/12dbfc40-64f6-48b2-9209-133dc628605f"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/8ae76f6a-11c1-4831-a4cb-4c5d84f2009e/14c1fbd3-988c-475e-8e2c-e0b1e647ffcc"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/1c7e438d-ea7e-40b8-aeed-c306f3e93829"
+      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/1ffe62b9-d10b-48af-a18e-3caaad43c97a"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/88d949b8-7652-449c-a529-812685cb0776/22dd3834-adb2-4484-b52f-3c574f0e0075"
@@ -842,9 +857,6 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/2eb9002c-296c-4662-b0db-631d03d4fb79"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
-    (path "/c21c9039-106e-4702-9253-a75703ed4148/38c04654-38ec-43f4-b8f8-a059c9202108"
-      (reference "#PWR?") (unit 1) (value "+12V") (footprint "")
-    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/3bbee580-df8e-4857-9a5f-1506a48f90ef"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
@@ -857,16 +869,19 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/49e436d6-0c63-4f49-b9c6-32ec492a94d1"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
-    (path "/c21c9039-106e-4702-9253-a75703ed4148/4aede033-f220-40bc-b296-3031372226f9"
-      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
-    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/4b161bf8-44c8-41a6-820f-7f0dfe14bd46"
       (reference "#PWR?") (unit 1) (value "+12C") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/4b4c9450-ff56-4932-984c-424ac3afa131"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/5325ac43-5eb8-42c4-8996-00a6be7327bd"
+      (reference "#PWR?") (unit 1) (value "+12V") (footprint "")
+    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/53e5d98c-5d4a-4060-911b-00d73a5a49ec"
+      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/58d7e4d1-c213-4715-8d3b-fa88c4da1108"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/5a73d22f-1588-43d4-9bf1-99b11bf70de8"
@@ -877,6 +892,9 @@
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/771b8751-e974-4b9a-b131-ee37f52fff87"
       (reference "#PWR?") (unit 1) (value "+12C") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/7a645eb9-7804-4260-bd9a-b1b81bf8cae9"
+      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/88d949b8-7652-449c-a529-812685cb0776/7f9dbf0c-836e-4164-805d-eb1d5be2f876"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
@@ -917,11 +935,11 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/a775ecc7-c18c-4a77-a2dd-c6cc22932ba4"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/a8c87d20-199e-455e-8894-5100752a3f94"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/ab195a24-3583-47c3-bef2-e3c3a15f41fe"
       (reference "#PWR?") (unit 1) (value "+VSW") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/ad46b2cb-12f0-49a7-b80e-95534f7a5d77"
+      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/af299038-1cd7-4934-87a0-5e28056d9773"
       (reference "#PWR?") (unit 1) (value "+BATT") (footprint "")
@@ -932,16 +950,19 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/b95a8a73-01fb-4050-9f09-4db3060a848e"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/b9a5f305-5f06-43f9-ba59-8aad24732899"
+      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
+    )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/bf957c3f-8ddc-4332-9cf7-9a3c7f779c04"
       (reference "#PWR?") (unit 1) (value "+12V") (footprint "")
-    )
-    (path "/c21c9039-106e-4702-9253-a75703ed4148/c0722fe0-59d5-4076-9f95-aa3e2462c234"
-      (reference "#PWR?") (unit 1) (value "+12C") (footprint "")
     )
     (path "/c0917cf0-f9a5-4fb6-9e8b-3328abac026c"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/c40cb48c-c6d3-4861-a845-8d729c3203eb"
+      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
+    )
+    (path "/88d949b8-7652-449c-a529-812685cb0776/c4d2cad2-d2ca-4dfe-a1c9-93283abf657c"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/ca9f47aa-17f6-44b8-8ddc-ac419aaaee4c"
@@ -989,6 +1010,9 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/f690bd5d-032a-4993-85ee-9f3853889728"
       (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
     )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/f90fd848-e822-45c7-92d7-73f5978eb54c"
+      (reference "#PWR?") (unit 1) (value "GNDPWR") (footprint "")
+    )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/fa6c4a00-f980-4926-86a9-026eae8711c1"
       (reference "#PWR?") (unit 1) (value "+12V") (footprint "")
     )
@@ -1005,7 +1029,7 @@
       (reference "BT?") (unit 1) (value "TESLA_24_V_MODULE") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/c9b53c74-da59-4b87-aea4-6d6938da44d8"
-      (reference "BT?") (unit 1) (value "12V AUX Battery") (footprint "")
+      (reference "BT?") (unit 1) (value "AUX Battery") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/d281f9c6-acd3-48ac-b910-78d003d559c0"
       (reference "BT?") (unit 1) (value "TESLA_24_V_MODULE") (footprint "")
@@ -1019,31 +1043,55 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/250e0d39-1bcb-4065-8802-02272c1d9324"
       (reference "D?") (unit 1) (value "DIODE") (footprint "")
     )
+    (path "/88d949b8-7652-449c-a529-812685cb0776/421f28e4-a954-4782-92de-c7f7290c18ef"
+      (reference "D?") (unit 1) (value "BATTERY BOX LIGHTS") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/488bf1e4-7535-484a-9d0c-cd324cdcfb7c"
+      (reference "D?") (unit 1) (value "BATTERY BOX LIGHTS") (footprint "")
+    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/660facde-0b6a-4adc-9114-5485a1ce26d1"
       (reference "D?") (unit 1) (value "FUN LIGHTS!") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/8366b64f-41cd-42e2-bad7-e678c355bd33"
+      (reference "D?") (unit 1) (value "LIGHT BAR") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/0965739d-2ffe-4379-a0b1-313019bfc3ef"
       (reference "F?") (unit 1) (value "Fuse") (footprint "")
     )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/1341def4-5337-4de5-b3af-c32fa22f691a"
+      (reference "F?") (unit 1) (value "200V, 30A") (footprint "")
+    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/1a3af94c-b3ea-409d-ade0-53723913abfa"
       (reference "F?") (unit 1) (value "Fuse") (footprint "")
     )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/3989a3c1-c081-42b6-88e3-cbda1cdb5d36"
-      (reference "F?") (unit 1) (value "Fuse") (footprint "")
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/1d5680af-5f12-4681-a0c2-d48d41fbfd7e"
+      (reference "F?") (unit 1) (value "Fuse, 400VDC, 1000A") (footprint "")
     )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/47b773a1-e4a8-4e5f-b29f-5b8f7b76a4c4"
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/4035468e-2ca0-4b52-824f-a68e7e5f0360"
       (reference "F?") (unit 1) (value "Fuse") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/5d524ab0-fa55-4718-820f-2e9282a7c0b2"
       (reference "F?") (unit 1) (value "Fuse") (footprint "")
     )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/5f22afcd-271e-4103-b8f2-932fd03e2404"
+      (reference "F?") (unit 1) (value "12V, 10A") (footprint "")
+    )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/62a43df4-efb3-4c55-9af1-ef7613e35847"
       (reference "F?") (unit 1) (value "12V, 5A") (footprint "")
     )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/6b67a004-9c6a-4983-8b59-29ee91f6cc47"
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/6889a784-efe2-41b4-955f-cc5694824385"
       (reference "F?") (unit 1) (value "Fuse") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/709fbe17-3273-4b35-900b-a915db2760af"
+      (reference "F?") (unit 1) (value "Fuse") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/829ca29b-d4f3-4f08-a837-5affd90903f9"
+      (reference "F?") (unit 1) (value "Fuse") (footprint "")
+    )
+    (path "/88d949b8-7652-449c-a529-812685cb0776/8cc41ff8-99b4-4ac9-a458-8961b1ed7db7"
+      (reference "F?") (unit 1) (value "Fuse") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/90a82ba1-185a-4bbf-9f7d-8704f634d99f"
       (reference "F?") (unit 1) (value "Fuse") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/afaf6506-72bf-45d8-a0f0-856be313f7fa"
@@ -1055,8 +1103,8 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/bc147314-f4e5-4457-93dc-44c13a495b87"
       (reference "F?") (unit 1) (value "Fuse") (footprint "")
     )
-    (path "/c21c9039-106e-4702-9253-a75703ed4148/c263a876-0122-43c0-bd91-8fb6c92a3787"
-      (reference "F?") (unit 1) (value "Fuse, 400VDC, 1000A") (footprint "")
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/c12bed2b-a94b-4471-b256-0b6787084b9e"
+      (reference "F?") (unit 1) (value "Fuse") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/c26cdd74-df8e-4063-a73d-f18e8485562c"
       (reference "F?") (unit 1) (value "Fuse") (footprint "")
@@ -1064,11 +1112,17 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/c9910df8-52f7-4240-a0cc-0a4d83196628"
       (reference "F?") (unit 1) (value "Fuse") (footprint "")
     )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/c99a71d3-a381-4eae-814c-d4205b07e8ce"
+      (reference "F?") (unit 1) (value "Fuse") (footprint "")
+    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/d0991c4e-3ed4-422d-b7a9-2046da529cd8"
       (reference "F?") (unit 1) (value "3A") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/f80b6c70-2097-4384-a9f2-1fdaff7fcacd"
       (reference "F?") (unit 1) (value "Fuse") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/fbd79d09-603e-4fdb-a843-c0c54d64c4c6"
+      (reference "F?") (unit 1) (value "12V, 100A") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/1a33b2f3-6a5e-42af-b66e-60e782ea8f5c"
       (reference "IC?") (unit 1) (value "SEV33ADE-144V") (footprint "")
@@ -1079,14 +1133,32 @@
     (path "/c21c9039-106e-4702-9253-a75703ed4148/be9ef7dc-e9f5-4425-9e6e-5c8595314d88"
       (reference "IC?") (unit 1) (value "ZEVA_MC1000C") (footprint "")
     )
-    (path "/c21c9039-106e-4702-9253-a75703ed4148/3fde6f15-b7c5-452d-b967-dc0bbf3f2116"
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/1a8eec51-c6db-408c-84fc-045412e716fc"
+      (reference "J?") (unit 1) (value "12V OUTLET") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/26b9f603-e3c5-40ce-b064-d8e3e8d9284c"
+      (reference "J?") (unit 1) (value "12V OUTLET") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/caa74c39-66ba-4867-ad97-7adae21e9329"
+      (reference "J?") (unit 1) (value "CAN_DB9_Female") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/049ec017-875f-492f-8a2f-1a921295c918"
       (reference "JP?") (unit 1) (value "Jumper_2_Bridged") (footprint "")
     )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/be068ffd-c4d4-41ae-b3da-6b2be4f0b653"
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/0dbbe423-dbbb-4f77-9398-b555f2f1cd0f"
+      (reference "JP?") (unit 1) (value "Jumper_2_Bridged") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/1a5f77c6-8a6e-4e08-8de2-55579476814c"
+      (reference "JP?") (unit 1) (value "Jumper_2_Bridged") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/422007d1-75c0-442c-a7d9-c4ab230960b5"
+      (reference "JP?") (unit 1) (value "Jumper_2_Bridged") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/a234e974-dd1e-4a1d-bf01-71553e84e807"
       (reference "JP?") (unit 1) (value "Jumper_2_Bridged") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/4e4d807e-a0a2-4b89-974e-0573528ad326"
-      (reference "K?") (unit 1) (value "RELAY, 12V") (footprint "")
+      (reference "K?") (unit 1) (value "PRECHARGER RELAY, 12V IN, 400VDC OUT") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/9837ecd9-e558-4329-b001-2602fcfb4c2f"
       (reference "K?") (unit 1) (value "12V, 50A") (footprint "")
@@ -1184,11 +1256,8 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/e827e1a4-23cd-4c13-aac1-29b8d31e7ad4"
       (reference "M?") (unit 1) (value "WINDSHIELD WIPER MOTOR") (footprint "")
     )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/250f9b51-ccff-473e-8acf-af4a6b46bae6"
-      (reference "R?") (unit 1) (value "R") (footprint "")
-    )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/2f80b51e-49f7-4c8d-b86a-c7d33330aeb9"
-      (reference "R?") (unit 1) (value "R") (footprint "")
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/0570c306-fe3a-4272-a1e5-ba6864de80ef"
+      (reference "R?") (unit 1) (value "CELL BOOSTER") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/36d19ba1-a773-4540-ac69-e73b11494fb6"
       (reference "R?") (unit 1) (value "RADIO") (footprint "")
@@ -1196,8 +1265,14 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/4b75dfe7-b4b0-472a-acca-355fa2091fb2"
       (reference "R?") (unit 1) (value "PASSENGER SEAT HEATER") (footprint "")
     )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/9f33746d-3678-46c3-bb55-c30c47a1c140"
-      (reference "R?") (unit 1) (value "R") (footprint "")
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/71610d85-f699-4b81-a24c-a9dfd2d3bf68"
+      (reference "R?") (unit 1) (value "PHONE CHARGER") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/8965df71-95c4-43af-aa8e-d366ce222b66"
+      (reference "R?") (unit 1) (value "PRECHARGER RESISTOR") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/96183a86-f1c0-4dfe-8942-e7c496bcab05"
+      (reference "R?") (unit 1) (value "12V AMP SENSE SHUNT") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/aecaaf80-1f34-4222-800f-e6b735337e0e"
       (reference "R?") (unit 1) (value "CB RADIO") (footprint "")
@@ -1205,19 +1280,13 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/b0f03785-ed51-49e3-b3c5-ba4d852dc313"
       (reference "R?") (unit 1) (value "DRIVER SEAT HEATER") (footprint "")
     )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/cb667f9f-d374-4cd7-b03a-48a6639669ff"
-      (reference "R?") (unit 1) (value "R") (footprint "")
-    )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/eabc04c6-7723-4e8d-89d7-13d5b4ac6414"
-      (reference "R?") (unit 1) (value "R") (footprint "")
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/e64d0782-06bd-4091-bcc5-541472c354d8"
+      (reference "R?") (unit 1) (value "WIFI HOTSPOT") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/edd8bd06-e716-425b-8b95-d84dc700e4cb"
       (reference "R?") (unit 1) (value "USB-C CHARGER") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/f25af0e4-2a88-450a-a510-0db99acc3a34"
-      (reference "R?") (unit 1) (value "R") (footprint "")
-    )
-    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/f84b066b-5ac2-4ac8-be4b-642fa485642c"
       (reference "R?") (unit 1) (value "R") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/38fae79d-00cd-4519-b228-37f34be792c2"
@@ -1232,14 +1301,32 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/02ebd83d-c28f-4be5-81ef-dcbb1d95835e"
       (reference "SW?") (unit 1) (value "WINDSHIELD WIPER SWITCH") (footprint "")
     )
+    (path "/88d949b8-7652-449c-a529-812685cb0776/0575040e-b89d-4a77-b193-7cc371c68782"
+      (reference "SW?") (unit 1) (value "BATTERY BOX LIGHT SWITCH") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/086c6b89-7533-460e-a2d7-99ff8d4d9290"
+      (reference "SW?") (unit 1) (value "MAINTENANCE_SW_LOCKOUT") (footprint "")
+    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/16e2d2f2-0b4b-4389-bd4b-75527703c972"
       (reference "SW?") (unit 1) (value "HEATER SWITCH") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/22b3a32f-2967-44bb-b73c-87afacc74b94"
+      (reference "SW?") (unit 1) (value "MAX MOTOR CURRENT SWITCH") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/28090c1b-3cc5-4776-98c0-525a8ac78e91"
       (reference "SW?") (unit 1) (value "PASSENGER BELL SWITCH") (footprint "")
     )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/2de94529-b2f5-47bb-aaba-ea1fb3b3907b"
+      (reference "SW?") (unit 1) (value "CONSUMPTION GAUGE DISPLAY SWITCH") (footprint "")
+    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/41569f5e-0a37-4aa0-8424-5b6077220033"
       (reference "SW?") (unit 1) (value "USB-C SWITCH") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/65e11461-e45b-419d-a3f8-e506927d849b"
+      (reference "SW?") (unit 1) (value "BATTERY BOX LIGHT SWITCH") (footprint "")
+    )
+    (path "/c21c9039-106e-4702-9253-a75703ed4148/690d5d08-3de3-4d5c-8444-0b7f46ba5dcf"
+      (reference "SW?") (unit 1) (value "12V OUTLET SWITCH") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/6c5dc005-4f78-4e6e-b705-fbfeab0f05a6"
       (reference "SW?") (unit 1) (value "INTERIOR LIGHT SWITCH") (footprint "")
@@ -1250,14 +1337,17 @@
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/7a78b04e-49c8-4bcb-bb7b-321cb3ba947d"
       (reference "SW?") (unit 1) (value "TURN SIGNAL") (footprint "")
     )
-    (path "/c21c9039-106e-4702-9253-a75703ed4148/7d64c2d3-fe89-4d2c-ab97-c971b9bb6627"
-      (reference "SW?") (unit 1) (value "MAINTENANCE_SW_LOCKOUT") (footprint "")
-    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/8fe76100-8469-49d0-98d7-32a12966aa0f"
       (reference "SW?") (unit 1) (value "BRAKE PEDAL") (footprint "")
     )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/9cf01064-8877-4b7e-8530-24e38942fad2"
+      (reference "SW?") (unit 1) (value "CELL BOOSTER SWITCH") (footprint "")
+    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/9fc088c3-5885-47b9-9175-67ddba7ad994"
-      (reference "SW?") (unit 1) (value "BATTERY TEMP SELECT SWITCH") (footprint "")
+      (reference "SW?") (unit 1) (value "BATTERY TEMP DISPLAY SELECT SWITCH") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/a3cc8e51-ba3e-43d3-a05c-9f8e0aa660eb"
+      (reference "SW?") (unit 1) (value "12V OUTLET SWITCH") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/b58ea297-65f9-46c9-8824-4533cc074ff0"
       (reference "SW?") (unit 1) (value "DRIVER SEAT HEATER") (footprint "")
@@ -1271,6 +1361,9 @@
     (path "/c21c9039-106e-4702-9253-a75703ed4148/c8ab6ddc-52c9-4da8-850b-46c3bdfcf8b6"
       (reference "SW?") (unit 1) (value "INERTIA SWITCH") (footprint "")
     )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/dcf1ce82-1eba-4d3a-9567-2aae5a898625"
+      (reference "SW?") (unit 1) (value "PHONE CHARGER SWITCH") (footprint "")
+    )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/dd9857cf-9265-4fe9-845e-6d2e507aa74d"
       (reference "SW?") (unit 1) (value "RADIO SWITCH") (footprint "")
     )
@@ -1279,6 +1372,12 @@
     )
     (path "/8ae76f6a-11c1-4831-a4cb-4c5d84f2009e/e26bbb7f-9e34-4949-8ae2-7015ada6a6af"
       (reference "SW?") (unit 1) (value "BMS RESET SIG") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/eca5c4a4-05e3-4d95-999e-f2e91310e52d"
+      (reference "SW?") (unit 1) (value "LIGHT BAR SWITCH") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/f24a7343-4d1c-4b24-996a-f40bc04bd0b5"
+      (reference "SW?") (unit 1) (value "OTHER TEMP DISPLAY SELECT SWITCH") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/21af030a-cf60-463a-8cf2-73c85c3c69a2"
       (reference "TH?") (unit 1) (value "Thermistor") (footprint "")
@@ -1305,7 +1404,7 @@
       (reference "TH?") (unit 1) (value "Thermistor") (footprint "")
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/0b76f1ae-216c-4bc6-bce6-751a8f8252ec"
-      (reference "U?") (unit 1) (value "CLOCK") (footprint "")
+      (reference "U?") (unit 1) (value "12V VOLT GAUGE") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/2fc670a5-780d-475b-8d44-ad0aee9e3f84"
       (reference "U?") (unit 1) (value "ORION_36S_BMS") (footprint "")
@@ -1330,6 +1429,15 @@
     )
     (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/a7b72a66-7974-4eb4-ac6f-ef53375e2d6d"
       (reference "U?") (unit 1) (value "ENERGY CONSUMPTION GAUGE") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/c9e6de7f-72bd-4b6b-8f87-d9f29d56b413"
+      (reference "U?") (unit 1) (value "OTHER TEMP GAUGE") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/dd0f018f-eeac-45cc-a668-7408c547c7a4"
+      (reference "U?") (unit 1) (value "MOTOR AMP GAUGE") (footprint "")
+    )
+    (path "/327f965c-bf09-40b8-bc9f-71eb5a782eeb/818a1dbe-5453-4748-ad68-48c6a2378d5e/eac57a0b-7ff2-424f-973d-8e125b23d648"
+      (reference "U?") (unit 1) (value "HV BATT SOC GAUGE") (footprint "")
     )
     (path "/c21c9039-106e-4702-9253-a75703ed4148/10a6754c-1e68-422a-a814-ba85153cac02"
       (reference "W?") (unit 1) (value "TESLA_MODULE_BUSBAR") (footprint "")
